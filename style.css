@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Reset básico para garantir que a página tenha um estilo consistente em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão e a cor de fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #7b707e; /* Cor de texto cinza-escuro (7b707e) */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    position: fixed; /* Fixando o cabeçalho no topo */
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    left: 0; /* Garante que o cabeçalho fique alinhado à esquerda */
+    width: 100%; /* Largura total da tela */
+    background-color: #E1AFD1; /* Cor de fundo rosa suave */
+    padding: 20px 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #7b707e; /* Cor de texto do link */
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cabecalho__menu__link:hover {
+    color: #f15ba6; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo principal da página */
+main {
+    padding: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de apresentação */
+.apresentacao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+img {
+    width: 25%;
+    border-radius: 50%;
+    margin-right: 50px;
+    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 4.5em;
+    color: #7b707e; /* Título com a cor cinza */
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #7b707e;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.apresentacao__link {
+    margin-top: 30px;
+}
+
+.apresentacao__link__botao {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #7828a7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.apresentacao__link__botao:hover {
+    background-color: #c7bcc9;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilo geral para o formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5cae8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+/* Estilo do campo de mensagem */
+textarea#mensagem {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(234, 228, 235);
+    font-size: 16px;
+    resize: none; /* Permite redimensionar apenas verticalmente */
+}
+
+textarea#mensagem:focus {
+    border-color: #d4a3eb;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #7828a7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c7bcc9;
+}
+
+/* Estilo da mensagem de sucesso */
+#mensagemSalva {
+    background-color: #d4edda;
+    color: #d559e0;
+    border: 1px solid #e8b1f3;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.rodape {
+    padding-bottom: 30px 30px 30px 30px;
+    font-size: 30px;
+    background-color: #E1AFD1;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+
+
+
+/* Para smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        flex-direction: column; /* Coloca o menu em coluna */
+        gap: 10px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    main {
+        padding: 50px 20px;
+    }
+
+    .apresentacao img {
+        width: 70%; /* Aumenta ainda mais a largura da imagem */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2.8em; /* Ajusta o tamanho do título */
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 1em; /* Ajusta o tamanho do parágrafo */
+        padding: 0 20px;
+    }
+
+    .apresentacao__link__botao {
+        width: 100%; /* Faz o botão ocupar a largura inteira */
+    }
+
+    form {
+        max-width: 100%; /* O formulário ocupa toda a largura */
+        padding: 20px;
+    }
+
+    .rodape {
+        font-size: 20px; /* Ajusta o tamanho da fonte do rodapé */
+    }
+}
+
+/* Para smartphones muito pequenos (max-width: 480px) */
+@media (max-width: 480px) {
+    .cabecalho__menu__link {
+        font-size: 16px; /* Reduz ainda mais o tamanho dos links */
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2.5em; /* Ajusta ainda mais o título */
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 0.9em; /* Ajusta ainda mais o parágrafo */
+    }
+
+    .rodape {
+        font-size: 18px; /* Ajusta o tamanho da fonte do rodapé */
+    }
+}
