@@ -4,32 +4,32 @@ html {
 
 
 
-/* Reset básico para garantir que a página tenha um estilo consistente em todos os navegadores */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo a fonte padrão e a cor de fundo */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Cor de fundo branca */
-    color: #7b707e; /* Cor de texto cinza-escuro (7b707e) */
+    background-color: #ffffff; 
+    color: #7b707e; 
     line-height: 1.6;
     text-align: center;
 }
 
-/* Estilo do cabeçalho */
+
 
 header {
-    position: fixed; /* Fixando o cabeçalho no topo */
-    top: 0; /* Fixa o cabeçalho no topo da página */
-    left: 0; /* Garante que o cabeçalho fique alinhado à esquerda */
-    width: 100%; /* Largura total da tela */
-    background-color: #E1AFD1; /* Cor de fundo rosa suave */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #E1AFD1; 
     padding: 20px 0;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    z-index: 1000; 
 }
 
 .cabecalho__menu {
@@ -40,24 +40,24 @@ header {
 
 .cabecalho__menu__link {
     text-decoration: none;
-    color: #7b707e; /* Cor de texto do link */
+    color: #7b707e; 
     font-size: 24px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .cabecalho__menu__link:hover {
-    color: #f15ba6; /* Cor de fundo ao passar o mouse */
+    color: #f15ba6; 
 }
 
-/* Estilo principal da página */
+
 main {
     padding: 150px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Seção de apresentação */
+
 .apresentacao {
     text-align: center;
     margin-bottom: 40px;
@@ -73,7 +73,7 @@ img {
 
 .apresentacao__conteudo__titulo {
     font-size: 4.5em;
-    color: #7b707e; /* Título com a cor cinza */
+    color: #7b707e; 
 }
 
 .apresentacao__conteudo__paragrafo {
@@ -111,7 +111,7 @@ h2 {
     text-align: center;
 }
 
-/* Estilo geral para o formulário */
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -125,7 +125,7 @@ form div {
     margin-bottom: 15px;
 }
 
-/* Estilo do campo de mensagem */
+
 textarea#mensagem {
     width: 100%;
     height: 150px;
@@ -133,7 +133,7 @@ textarea#mensagem {
     border-radius: 4px;
     border: 1px solid rgb(234, 228, 235);
     font-size: 16px;
-    resize: none; /* Permite redimensionar apenas verticalmente */
+    resize: none; 
 }
 
 textarea#mensagem:focus {
@@ -141,7 +141,7 @@ textarea#mensagem:focus {
     outline: none;
 }
 
-/* Estilo do botão */
+
 button {
     background-color: #7828a7;
     color: white;
@@ -157,7 +157,7 @@ button:hover {
     background-color: #c7bcc9;
 }
 
-/* Estilo da mensagem de sucesso */
+
 #mensagemSalva {
     background-color: #d4edda;
     color: #d559e0;
@@ -178,15 +178,15 @@ button:hover {
 
 
 
-/* Para smartphones (max-width: 768px) */
+
 @media (max-width: 768px) {
     .cabecalho__menu {
-        flex-direction: column; /* Coloca o menu em coluna */
+        flex-direction: column; 
         gap: 10px;
     }
 
     .cabecalho__menu__link {
-        font-size: 18px; /* Ajusta o tamanho da fonte */
+        font-size: 18px; 
     }
 
     main {
@@ -194,49 +194,49 @@ button:hover {
     }
 
     .apresentacao img {
-        width: 70%; /* Aumenta ainda mais a largura da imagem */
+        width: 70%; 
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     .apresentacao__conteudo__titulo {
-        font-size: 2.8em; /* Ajusta o tamanho do título */
+        font-size: 2.8em; 
     }
 
     .apresentacao__conteudo__paragrafo {
-        font-size: 1em; /* Ajusta o tamanho do parágrafo */
+        font-size: 1em; 
         padding: 0 20px;
     }
 
     .apresentacao__link__botao {
-        width: 100%; /* Faz o botão ocupar a largura inteira */
+        width: 100%; 
     }
 
     form {
-        max-width: 100%; /* O formulário ocupa toda a largura */
+        max-width: 100%; 
         padding: 20px;
     }
 
     .rodape {
-        font-size: 20px; /* Ajusta o tamanho da fonte do rodapé */
+        font-size: 20px; 
     }
 }
 
-/* Para smartphones muito pequenos (max-width: 480px) */
+
 @media (max-width: 480px) {
     .cabecalho__menu__link {
-        font-size: 16px; /* Reduz ainda mais o tamanho dos links */
+        font-size: 16px; 
     }
 
     .apresentacao__conteudo__titulo {
-        font-size: 2.5em; /* Ajusta ainda mais o título */
+        font-size: 2.5em; 
     }
 
     .apresentacao__conteudo__paragrafo {
-        font-size: 0.9em; /* Ajusta ainda mais o parágrafo */
+        font-size: 0.9em; 
     }
 
     .rodape {
-        font-size: 18px; /* Ajusta o tamanho da fonte do rodapé */
+        font-size: 18px; 
     }
 }
